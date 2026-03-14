@@ -1,19 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
+//component vanaya ko type of function jasle ni JSX garxa html jasta syntax
 function App() {
-  const [count, setCount] = useState(0)
+let name = "amrit reule"
+let age = 44
+let address = "nepal"
 
   return (
-    <div className='App'>
-      <h1>hello world </h1>
+
+    <div>
+    <h1 style={{color:"red", background:"white"}}>This tag are used in react project  {name}</h1>
+    <h2>My age is: {age}</h2>
+    <h3>My address is: {address}</h3>
     </div>
-    // <>
-    // <h1>hello World</h1>
-    // </>
+   
   )
 }
 
