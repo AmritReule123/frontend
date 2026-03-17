@@ -1,5 +1,10 @@
 // import of router
 import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Home from "./Home"
+import About from "./About"
+import Contact from "./Contact"
+
+
 
 
 //component vanaya ko type of function jasle ni JSX garxa html jasta syntax
@@ -9,10 +14,10 @@ function App() {
   return (
  <BrowserRouter>
   <Routes>
-    <Route path="/" element={<h1>Hello, World!</h1>} />
-    <Route path="/about" element={<h1>About Us</h1>} />
-    <Route path="/contact" element={<h3> this is a contact page</h3>} />
-    <Route path="/services" element={<h2> this is our services tag</h2>} />
+    <Route path="/" element={<Home />} />
+    <Route path="/About" element={<About />} />
+<Route path="/Contact" element={<Contact />} />
+
   </Routes>
 </BrowserRouter> 
 
