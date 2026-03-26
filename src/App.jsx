@@ -1,31 +1,19 @@
-// import of router
-import {BrowserRouter,Routes,Route} from "react-router-dom"
-import Home from "./Home"
-import About from "./About"
-import Contact from "./Contact"
-
-
-
-
-//component vanaya ko type of function jasle ni JSX garxa html jasta syntax
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
+import LearningUseEffect from "./LearningUseEffect";
 function App() {
-
-
   return (
- <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/About" element={<About />} />
-<Route path="/Contact" element={<Contact />} />
-
-  </Routes>
-</BrowserRouter> 
-
-
-
-
-
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+<Route path="/useeffect" element={<LearningUseEffect />} />     
+</Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

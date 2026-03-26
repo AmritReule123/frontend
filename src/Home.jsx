@@ -1,49 +1,24 @@
-import { useState } from "react"
+import { useState } from "react";
 
-function Home(){
-    // let meroNumber = 0
-    // function increaseMeroNumber(){
-    //     meroNumber = meroNumber + 1
-    //     console.log(meroNumber)
-    // }
-    // function decreaseMeroNumber(){
-    //     meroNumber = meroNumber - 1 
-    // }
+function Home() {
 
+  const [number, setNumber] = useState(0);
 
-const [age, setAge] = useState(1000)
+  const increaseMyValue = () => {
+    setNumber(number + 1);
+  };
 
+  const decreaseMyValue = () => {
+    setNumber(number - 1);
+  };
 
-    // console.log(useState(10))
-// let something = useState(100)
-// let myValue = something[0]
-// let myFunction = something[1]
-
-
-function increaseMyValue(){
-    setAge(age + 1)
-
+  return (
+    <div>
+      <h1>{number}</h1>
+      <button onClick={increaseMyValue}>+</button>
+      <button onClick={decreaseMyValue}>-</button>
+    </div>
+  );
 }
 
-function decreaseMyValue(){
-    setAge(age - 1)
-}
-
-
-    return (
-       <div>
-        <h1> {age}</h1>
-        <button onClick={increaseMeroNumber}>+</button>
-<button onClick={decreaseMeroNumber}>-</button>
-
-
-       {/* <h1>my value is : {myValue}</h1>
-       <button onClickCapture={increaseMyValue}>+</button>
-       <button onClick={decreaseMyValue}>-</button> */}
-       </div> 
-    )
-}
-
-export default Home 
-
-
+export default Home;

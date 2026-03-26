@@ -1,12 +1,10 @@
-function Contact(){
-    return(
-        <div>
-            <h1>Contact Us</h1>
-            <p>This is a simple paragraph.</p>
-            <p>Contact no: 98989898</p>
-            <a href="/about">Go to about page</a>
-        </div>
-    )
+function Contact() {
+  return (
+    <div style={{ textAlign: "center" }}>
+      <h1>📞 Contact Page</h1>
+      <p>Email: example@gmail.com</p>
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;
