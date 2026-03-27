@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
-import LearningUseEffect from "./LearningUseEffect";
+import Learn from "./Learn";
 function App() {
   return (
     <BrowserRouter>
@@ -10,7 +10,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-<Route path="/useeffect" element={<LearningUseEffect />} />     
+<Route path="/Learn" element={<Learn />} />     
 </Routes>
     </BrowserRouter>
   );
